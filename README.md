@@ -9,7 +9,7 @@ The script issues OpenFlow commands for IPv4 and IPv6 or custom commands.
 
 ## Running the script
 
-> pyhton3 MellanoxScriptV2.py
+> pyhton3 MellanoxScript.py
 
 ## Usage
 
