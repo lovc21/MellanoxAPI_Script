@@ -301,54 +301,61 @@ def newflowIPv6():
             ### Params
             if i == 1:
                 print("IMPORTANT remember the openflow id")
-                print("example: 1-100\n")
-                openflowID = input("enter openflow add-flows id: ")
+                print("Example: 1-100\n")
+                openflowID = input("Enter openflow add-flows id: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 2:
-                print("example: 1-1000\n")
-                priorityID = input("enter a priority : ")
+                print("Example: 1-1000\n")
+                priorityID = input("Enter a priority : ")
                 print("---------------------------------------------------------------------\n")
             elif i == 3:
-                print("example: 1-1000\n")
-                print("if empty this rule will not be used")
-                tableID = input("enter table 3: ")
+                print("Example: 1-1000\n")
+                print("If empty this rule will not be used")
+                tableID = input("Enter table 3: ")
                 print("---------------------------------------------------------------------\n")
             ###  Match
             elif i == 4:
-                print("example entry port: Eth1/1; Eth1/22, Eth1/23, Eth1/24; ANY)\n")
-                print("if empty this rule will not be used")
-                portID = input("enter a in_port/entry port:")
+                print("Example entry port: Eth1/1; Eth1/22, Eth1/23, Eth1/24; ANY)\n")
+                print("If empty this rule will not be used")
+                portID = input("Enter a in_port/entry port:")
                 print("---------------------------------------------------------------------\n")
             elif i == 5:
-                print("example nw_src: :00:0c:e9:00:00:01 \n")
-                print("if empty this rule will not be used")
-                new_srcID = input("enter a new_src IPv6: ")
+                print("Example nw_src: :00:0c:e9:00:00:01 \n")
+                print("If empty this rule will not be used")
+                new_srcID = input("Enter a new_src IPv6: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 6:
                 print("example nw_dst: :00:0c:e9:00:00:01\n")
                 print("if empty this rule will not be used")
-                new_dstID = input("enter a new_dst IPv6: ")
+                new_dstID = input("Enter a new_dst IPv6: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 7:
-                print("example vlan: 16\n")
-                print("if empty this rule will not be used")
-                vlanID = input("enter a vlan:")
+                print("Example vlan: 16\n")
+                print("If empty this rule will not be used")
+                vlanID = input("Enter a vlan:")
                 print("---------------------------------------------------------------------\n")
             elif i == 8:
-                print("example new port: 6\n")
-                print("if empty this rule will not be used")
-                nw_port = input("enter a new port: ")
+                print("Example new port: 6\n")
+                print("If empty this rule will not be used")
+                nw_port = input("Enter a new port: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 9:
-                print("example of a output: Eth1/12, normal, ALL, ")
-                print("if empty this rule will not be used")
-                actions_outputID = input("enter a output: ")
+                print("Example new vlan_tci: 0x1000/0x1000\n")
+                print("If empty this rule will not be used")
+                vlan_tci = input("Enter a new vlan_tci: ")
+                print("---------------------------------------------------------------------\n")
+            ### Actions and Outputs
+            elif i == 10:
+                print("Example of a output: Eth1/12, normal, ALL, ")
+                print("If empty this rule will not be used")
+                actions_outputID = input("Enter a output: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 11:
                 print(
-                    "action's: Push/pop VLAN, SET_TTL, DEC_TTL, goto_table, Set queue, VLAN ID, PCP, DSCP, ECN, Output, Group, Meters, Normal, DROP, OUTPUT, DEC_TTL, SET_DMAC, OUTPUT\n")
-                print("example of a action: pop_vlan, goto_table:251, od_nw_ttl:55, Set_field:")
-                actionID = input("enrer a action:")
+                    "Actions: Push/pop VLAN, SET_TTL, DEC_TTL, goto_table, Set queue, VLAN ID, PCP, DSCP, ECN, Output,"
+                    "Group, Meters, Normal, DROP, OUTPUT, DEC_TTL, SET_DMAC, OUTPUT\n")
+                print("Example of a action: pop_vlan, goto_table:251, od_nw_ttl:55, Set_field:")
+                actionID = input("Enter a action:")
                 print("---------------------------------------------------------------------\n")
             elif i == 12:
                 try:
@@ -383,34 +390,34 @@ def addrule():
         try:
             ### Params
             if i == 1:
-                print("IMPORTANT remember the openflow id")
-                print("example: 1-100\n")
-                openflowID = input("enter openflow add-flows id: ")
+                print("IMPORTANT: remember the openflow id")
+                print("Example: 1-100\n")
+                openflowID = input("Enter openflow add-flows id: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 2:
-                print("example: 1-1000\n")
-                priorityID = input("enter a priority : ")
+                print("Example: 1-1000\n")
+                priorityID = input("Enter a priority: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 3:
-                print("example: 1-1000\n")
-                print("if empty this rule will not be used")
-                tableID = input("enter table 3: ")
+                print("Example: 1-1000\n")
+                print("If empty this rule will not be used")
+                tableID = input("Enter table 3: ")
                 print("---------------------------------------------------------------------\n")
             ###  Match stvari
             elif i == 4:
-                print("example EtherType: 0x0800 == IPv4, 0x0806 == ARP, 0x86DD ==IPv6")
-                print("if left empty type will be IPv4")
-                typeID = input("enter a packet type: ")
+                print("Example EtherType: 0x0800 == IPv4, 0x0806 == ARP, 0x86DD ==IPv6")
+                print("If left empty type will be IPv4")
+                typeID = input("Enter a packet type: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 5:
-                print("example entry port: Eth1/1; Eth1/22, Eth1/23, Eth1/24; ANY)\n")
-                print("if empty this rule will not be used")
-                portID = input("enter a in_port/entry port:")
+                print("Example entry port: Eth1/1; Eth1/22, Eth1/23, Eth1/24; ANY)\n")
+                print("If empty this rule will not be used")
+                portID = input("Enter a in_port/entry port:")
                 print("---------------------------------------------------------------------\n")
             elif i == 6:
-                print("example nw_src: \n")
-                print("if empty this rule will not be used")
-                new_srcID = input("enter a new_src IP: ")
+                print("Example nw_src: \n")
+                print("If empty this rule will not be used")
+                new_srcID = input("Enter a new_src IP: ")
                 print("---------------------------------------------------------------------\n")
             elif i == 7:
                 print("Example nw_dst: \n")
